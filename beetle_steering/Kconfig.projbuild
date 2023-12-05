@@ -1,0 +1,21 @@
+menu "Beetle Steering Configuration"
+
+    config STEERING_POSITION_LIMIT
+        int "Steering position limit"
+        default 50000
+        help
+            Position limit of steering servo in steps.
+
+    config STEERING_SPEED_LIMIT
+        int "Steering speed limit"
+        default 30000
+        help
+            Speed limit of steering servo in steps per second.
+
+    config STEERING_DEFAULT_SPEED
+        int "Steering default speed"
+        default 15000
+        help
+            Default speed of steering servo in steps per second.
+
+endmenu
